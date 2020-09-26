@@ -1,16 +1,15 @@
 const fs = require('fs');
+const path = require('path');
 
 const getAllFiles = function (dir) {
   let results = [];
   const list = fs.readdirSync(dir);
   list.forEach(function (file) {
-    const fileName = dir + '/' + file;
+    const fileName = dir + path.sep + file;
     const stat = fs.statSync(fileName);
     if (stat && stat.isDirectory()) {
-      /* Go into a subdirectory */
       results = results.concat(getAllFiles(fileName));
     } else {
-      /* Is a file, get the content */
       results.push(getFileContent(fileName));
     }
   });
