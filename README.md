@@ -6,12 +6,18 @@ A simple program to find all the TODO files in the directory and its subdirector
 
 # Table of Contents
 
+[Features](https://github.com/bendanye/todo-finder#features)
+
 [Quick Start](https://github.com/bendanye/todo-finder#quickstart)
 
 - [Program](https://github.com/bendanye/todo-finder#program)
 - [From source](https://github.com/bendanye/todo-finder#from-source)
 
 
+
+# Features
+
+- Able to find all the files contain TODO (case sensitive) in current directory and its subdirectory
 
 # Quick Start
 
